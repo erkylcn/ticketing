@@ -7,7 +7,7 @@ import { OrderCancelledListener } from './events/listeners/order-cancelled-liste
 
 
 const start = async () => {
-
+    console.log('Starting...');
     if(!process.env.JWT_KEY){
         throw new Error('JWT_KEY must be defined');
     }
@@ -27,8 +27,6 @@ const start = async () => {
     if(!process.env.NATS_CLUSTER_ID){
         throw new Error('NATS_CLUSTER_ID must be defined');
     }
-
-
 
     try{
         await natsWrapper.connect(process.env.NATS_CLUSTER_ID, process.env.NATS_CLIENT_ID, process.env.NATS_URL);
