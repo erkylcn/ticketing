@@ -1,4 +1,4 @@
-ame: tests-tickets
+name: tests-tickets
 
 on:
   pull_request
