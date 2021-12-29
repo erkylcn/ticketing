@@ -16,7 +16,6 @@ export default ({ currentUser }) => {
                 <Link href={href}>
                     <a className="nav-link">{label}</a>
                 </Link>
-
             </li>
         });
 
